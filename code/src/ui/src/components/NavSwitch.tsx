@@ -10,6 +10,7 @@ interface Props {
     rightLabel?: string;
     leftColor?: string;
     rightColor?: string;
+    ariaLabel?: string;
     size?: number;
     inputProps?: any;
     checked?: boolean;
@@ -19,6 +20,7 @@ interface Props {
 export const NavSwitch: React.FC<Props> = ({
     leftLabel,
     rightLabel,
+    ariaLabel,
     leftColor,
     rightColor,
     size,
@@ -44,7 +46,7 @@ export const NavSwitch: React.FC<Props> = ({
             <MySwitch
                 checked={checked}
                 onChange={handleOnChange}
-                inputProps={{ 'aria-label': '' }}
+                inputProps={{ 'aria-label': ariaLabel }}
             />
             {rightLabel && <Typography>{rightLabel}</Typography>}
         </Stack>

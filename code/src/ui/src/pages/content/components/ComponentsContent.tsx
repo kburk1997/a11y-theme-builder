@@ -174,6 +174,7 @@ export const ComponentsContent: React.FC<Props> = ({ user, designSystem }) => {
                             <NavSwitch
                                 leftLabel="Light"
                                 rightLabel="Dark"
+                                ariaLabel={"Dark Mode"}
                                 checked={darkMode}
                                 onChange={() => setDarkMode(!darkMode)}
                             />

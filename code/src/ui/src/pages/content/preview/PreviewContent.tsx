@@ -75,7 +75,7 @@ export const PreviewContent: React.FC<Props> = ({ user, designSystem }) => {
                         <NavSwitch
                             leftLabel="Light"
                             rightLabel="Dark"
-                            inputProps={{ 'aria-label': '' }}
+                            ariaLabel={"Dark Mode"}
                             checked={darkMode}
                             onChange={() => setDarkMode(!darkMode)}
                         />
